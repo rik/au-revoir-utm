@@ -2,7 +2,7 @@
     "name": "au-revoir-utm", 
     "license": "WTFPL http://sam.zoy.org/wtfpl/", 
     "author": "Anthony Ricaud <anthony@ricaud.me>", 
-    "version": "0.1", 
+    "version": "0.2", 
     "fullName": "au-revoir-utm", 
     "id": "jid1-yRtlFKrTMBrAtQ", 
     "description": "Removes crappy utm_ tracking stuff"
