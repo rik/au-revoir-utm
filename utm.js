@@ -1,5 +1,4 @@
-const needle = 'utm_';
-const replace = /[?&]utm_.*/;
+const utmPrefix = 'utm_';
 
 class UTM {
     /**
@@ -7,10 +6,16 @@ class UTM {
     It will match URLs that do not contain UTM parameters but that's ok.
     */
     static mayContain(url) {
-        return url.includes(needle);
+        return url.includes(utmPrefix);
     }
 
     static remove(url) {
-        return url.replace(replace, '');
+        const parsedURL = new URL(url);
+        for (let param of parsedURL.searchParams.keys()) {
+            if (param.startsWith(utmPrefix)) {
+                parsedURL.searchParams.delete(param);
+            }
+        }
+        return parsedURL.toString();
     }
 }
