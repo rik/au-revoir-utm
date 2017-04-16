@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "au-revoir-utm",
-    "version": "0.4",
+    "version": "1.0.0",
     "description": "Removes crappy utm_ tracking stuff",
     "homepage_url": "http://github.com/rik/au-revoir-utm",
     "permissions": [
