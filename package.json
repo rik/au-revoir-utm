@@ -2,8 +2,17 @@
     "name": "au-revoir-utm",
     "license": "WTFPL http://sam.zoy.org/wtfpl/",
     "author": "Anthony Ricaud <anthony@ricaud.me>",
-    "version": "0.3",
+    "version": "0.4",
     "fullName": "au-revoir-utm",
     "id": "jid1-yRtlFKrTMBrAtQ",
-    "description": "Removes crappy utm_ tracking stuff"
+    "description": "Removes crappy utm_ tracking stuff",
+    "dependencies": {},
+    "scripts": {
+        "start": "web-ext run --firefox=nightly --browser-console"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.2.0",
+        "web-ext": "^1.8.1"
+    }
 }
