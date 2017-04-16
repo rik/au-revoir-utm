@@ -6,6 +6,7 @@ function removeUtms({ url }) {
     }
 };
 
+const browser = window.browser || window.chrome;
 browser.webRequest.onBeforeRequest.addListener(
     removeUtms,
     {urls: ["<all_urls>"] },
