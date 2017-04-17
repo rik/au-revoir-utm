@@ -1,7 +1,15 @@
 How annoying are those "utm_source=rss&utm_medium=rss&utm_campaign=rss" in URLs ? Right!
 
-So this extension removes them.
+So this extension removes them and prevents you from being tracked.
 
-It's just changing the displayed URL for copy/paste love without redirection so it should not slow down your browsing.
+[Install on Firefox](https://addons.mozilla.org/firefox/addon/au-revoir-utm/)
+[Install on Chrome](https://chrome.google.com/webstore/detail/au-revoir-utm/jaibjcnlipcgpfbmedodbcddcoflhmho)
 
-Extension available at https://addons.mozilla.org/firefox/addon/au-revoir-utm/
+# Getting started
+```
+npm install
+npm start
+```
+
+# Running the tests
+Open `testrunner.html` in a supported browser.
