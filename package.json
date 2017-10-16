@@ -10,11 +10,13 @@
     "scripts": {
         "build": "web-ext build --source-dir src",
         "lint": "web-ext lint --source-dir src",
-        "start": "web-ext run --source-dir src --firefox=nightly --browser-console"
+        "start":
+            "web-ext run --source-dir src --firefox=nightly --browser-console"
     },
     "devDependencies": {
         "chai": "^4.1.2",
         "mocha": "^4.0.1",
+        "prettier": "^1.7.4",
         "web-ext": "^2.2.2"
     }
 }
