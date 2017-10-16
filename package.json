@@ -1,6 +1,6 @@
 {
     "name": "au-revoir-utm",
-    "license": "WTFPL http://sam.zoy.org/wtfpl/",
+    "license": "WTFPL",
     "author": "Anthony Ricaud <anthony@ricaud.me>",
     "version": "1.0.0",
     "fullName": "au-revoir-utm",
@@ -13,8 +13,8 @@
         "start": "web-ext run --source-dir src --firefox=nightly --browser-console"
     },
     "devDependencies": {
-        "chai": "^3.5.0",
-        "mocha": "^3.2.0",
-        "web-ext": "^1.8.1"
+        "chai": "^4.1.2",
+        "mocha": "^4.0.1",
+        "web-ext": "^2.2.2"
     }
 }
