@@ -11,10 +11,18 @@
         "build": "web-ext build --source-dir src",
         "lint": "web-ext lint --source-dir src",
         "start":
-            "web-ext run --source-dir src --firefox=nightly --browser-console"
+            "web-ext run --source-dir src --firefox=nightly --browser-console",
+        "test": "karma start",
+        "test:watch": "karma start --no-single-run",
+        "test:debug": "karma start --no-single-run --browsers Firefox"
     },
     "devDependencies": {
         "chai": "^4.1.2",
+        "karma": "^1.7.1",
+        "karma-chai": "^0.1.0",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-firefox-launcher": "^1.0.1",
+        "karma-mocha": "^1.3.0",
         "mocha": "^4.0.1",
         "prettier": "^1.7.4",
         "web-ext": "^2.2.2"

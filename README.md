@@ -6,10 +6,10 @@ So this extension removes them and prevents you from being tracked.
 - [Install on Chrome](https://chrome.google.com/webstore/detail/au-revoir-utm/jaibjcnlipcgpfbmedodbcddcoflhmho)
 
 # Getting started
-```
-npm install
-npm start
+```shell
+$ yarn
+$ yarn start
 ```
 
 # Running the tests
-Open `testrunner.html` in a supported browser.
+Depending on the task, you can run `yarn test`, `yarn test:watch` or `yarn test:debug`
