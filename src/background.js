@@ -1,8 +1,17 @@
 function removeUtms({ url }) {
-    if (UTM.mayContain(url)) {
-        return {
-            redirectUrl: UTM.remove(url),
-        }
+    if (!UTM.mayContain(url)) {
+        return
+    }
+
+    const redirectUrl = UTM.remove(url)
+    // Avoid infinite redirections
+    // See https://github.com/rik/au-revoir-utm/issues/14
+    if (redirectUrl === url) {
+        return
+    }
+
+    return {
+        redirectUrl,
     }
 }
 
