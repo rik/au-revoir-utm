@@ -9,12 +9,6 @@ module.exports = function(config) {
         logLevel: config.LOG_INFO,
         autoWatch: true,
         browsers: ['ChromeHeadless', 'FirefoxHeadless'],
-        customLaunchers: {
-            FirefoxHeadless: {
-                base: 'Firefox',
-                flags: ['-headless'],
-            },
-        },
         client: {
             mocha: {
                 // change Karma's debug.html to the mocha web reporter
