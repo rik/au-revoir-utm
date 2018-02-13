@@ -18,6 +18,6 @@ function removeUtms({ url }) {
 const browser = window.browser || window.chrome
 browser.webRequest.onBeforeRequest.addListener(
     removeUtms,
-    { urls: ['<all_urls>'] },
+    { urls: ['<all_urls>'], types: ['main_frame', 'sub_frame'] },
     ['blocking']
 )
