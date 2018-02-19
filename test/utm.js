@@ -29,6 +29,11 @@ describe('UTM.remove', function() {
             output:
                 'http://www.fredzone.org/la-terre-a-t-elle-ete-ensemencee-par-des-particules-extraterrestres-554',
         },
+        {
+            title: 'do not break link with a hash',
+            input: 'http://foo.com/bar/baz/?utm_source=123&utm_medium=rss&utm_campaign=298161#more',
+            output: 'http://foo.com/bar/baz/#more',            
+        },        
     ].forEach(function({ title, input, output }) {
         it(title, function() {
             expect(UTM.remove(input)).to.equal(output)
