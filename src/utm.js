@@ -12,11 +12,6 @@ class UTM {
     }
 
     static remove(url) {
-        const remover = function(param) {
-            
-        }
-            
-        
         const parsedURL = new URL(url)
         for (let param of [...parsedURL.searchParams.keys()]) {
             if (utmPrefixes.some(function(prefix) { return param.startsWith(prefix); })) {
